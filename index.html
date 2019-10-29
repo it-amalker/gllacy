@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="header-top">
             <div class="main-logo">
-                <img src="/img/logo_main.svg" width="154" height="64" alt="Главный логоип сайта">
+                <a><img src="img/logo_main.svg" width="154" height="64" alt="Главный логотип сайта"></a>
             </div>
             <nav class="main-navigation">
                 <ul class="main-menu">
@@ -73,6 +73,10 @@
             <div class="header-cart">
                 <a href="#">Пусто</a>
             </div>
+            <div class="site-info">
+                <b class="work-hours">С 10 до 20, ежедневно</b>
+                <b class="contact-telephone">8 812 450-25-25</b>
+            </div>
         </div>
         <div class="header-promo">
             <div class="sliders-wrapper">
@@ -105,15 +109,11 @@
                     </ul>
                 </div>
                 <a href="#">Давайте оба!</a>
-                <div class="site-info">
-                    <b class="work-hours">С 10 до 20, ежедневно</b>
-                    <b class="contact-telephone">8 812 450-25-25</b>
-                </div>
             </div>
         </div>
     </header>
     <main>
-        <h1 class="visually-hidden">Интернет сайт по продаже мороженного "Глейси"</h1>
+        <h1 class="visually-hidden">Интернет сайт по продаже мороженого "Глейси"</h1>
         <section class="bonuses">
             <ul class="bonuses-list">
                 <li class="bonus">
@@ -135,41 +135,53 @@
         <section class="ice-cream-catalog">
             <ul class="ice-cream-list">
                 <li class="ice-cream">
+                    <div class="ice-cream-cover">
+                        <a class="button ice-cream-preview-button" href="#">Быстрый просмотр</a>
+                    </div>
                     <div class="ice-cream-logo">
                         <img src="img/catalog-1.png" width="267" height="267"
                             alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     </div>
-                    <p class="ice-cream-price">310 <span>/кг</span></p>
+                    <p class="ice-cream-price">310<span>/кг</span></p>
                     <a href="#">
                         <h3 class="ice-cream-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
                     </a>
                 </li>
                 <li class="ice-cream">
+                    <div class="ice-cream-cover">
+                        <a class="button ice-cream-preview-button" href="#">Быстрый просмотр</a>
+                    </div>
                     <div class="ice-cream-logo">
                         <img src="img/catalog-2.png" width="267" height="267"
                             alt="Сливочно-кофейное с кусочками шоколада">
                     </div>
-                    <p class="ice-cream-price">380 <span>/кг</span></p>
+                    <p class="ice-cream-price">380<span>/кг</span></p>
                     <a href="#">
                         <h3 class="ice-cream-title">Сливочно-кофейное с кусочками шоколада</h3>
                     </a>
                 </li>
                 <li class="ice-cream">
+                    <div class="ice-cream-cover">
+                        <a class="button ice-cream-preview-button" href="#">Быстрый просмотр</a>
+                    </div>
                     <div class="ice-cream-logo">
                         <img src="img/catalog-3.png" width="267" height="267"
                             alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     </div>
-                    <p class="ice-cream-price">355 <span>/кг</span></p>
+                    <p class="ice-cream-price">355<span>/кг</span></p>
                     <a href="#">
                         <h3 class="ice-cream-title">Сливочно-клубничное с присыпкой из белого шоколада</h3>
                     </a>
                 </li>
                 <li class="ice-cream">
+                    <div class="ice-cream-cover">
+                        <a class="button ice-cream-preview-button" href="#">Быстрый просмотр</a>
+                    </div>
                     <div class="ice-cream-logo">
                         <img src="img/catalog-4.png" width="267" height="267"
                             alt="Сливочное крем-брюле с карамельной подливкой">
                     </div>
-                    <p class="ice-cream-price">415 <span>/кг</span></p>
+                    <p class="ice-cream-price">415<span>/кг</span></p>
                     <a href="#">
                         <h3 class="ice-cream-title">Сливочное крем-брюле с карамельной подливкой</h3>
                     </a>
@@ -258,6 +270,7 @@
             <textarea name="letter" id="letter" placeholder="Напишите что-нибудь..."></textarea>
             <button class="button feedback-button" type="submit">Отправить</button>
         </form>
+        <button class="feedback-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
     </div>
 </body>
 
