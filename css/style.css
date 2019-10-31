@@ -751,12 +751,11 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-.bonuses-list {}
-
 .bonus {
     display: inline-block;
     width: 520px;
     padding: 20px;
+    margin-bottom: 40px;
 
     border-radius: 10px;
 }
@@ -791,4 +790,129 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 165px;
     margin-left: auto;
+}
+
+.ice-cream-catalog {
+    margin-bottom: 40px;
+}
+
+.ice-cream {
+    position: relative;
+    z-index: 0;
+
+    display: inline-block;
+    width: 267px;
+    margin-right: 22px;
+}
+
+.ice-cream:hover .ice-cream-cover {
+    display: block;
+}
+
+.ice-cream::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 61px;
+    height: 61px;
+
+    background: url("../img/hit-icon.svg") center no-repeat;
+}
+
+.ice-cream:nth-child(4n + 4) {
+    margin-right: 0;
+}
+
+.ice-cream-cover {
+    position: absolute;
+    top: -6px;
+    left: -13px;
+    z-index: -1;
+
+    display: none;
+    width: 293px;
+    height: 405px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ice-cream-preview-button {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 339px;
+
+}
+
+.ice-cream-logo img {
+    display: block;
+    width: 267px;
+    height: 267px;
+}
+
+.ice-cream-price {
+    position: absolute;
+    top: 209px;
+    left: 0;
+
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.ice-cream-price span {
+    position: relative;
+
+    padding-left: 36px;
+
+    font-size: 30px;
+}
+
+.ice-cream-price span::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 7px;
+
+    width: 26px;
+    height: 31px;
+
+    background: url("../img/rubbles-icon.svg") center no-repeat;
+
+    filter: drop-shadow(1px 1px 3px rgba(49, 50, 53, 0.5));
+}
+
+.ice-cream a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ice-cream a:hover {
+    color: #ffbc9e;
+}
+
+.ice-cream-title span:hover {
+    border-bottom: 1px solid #ffbc9e;
+}
+
+.ice-cream-title {
+    padding-top: 17px;
+
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ice-cream-title span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
