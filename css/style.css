@@ -61,7 +61,7 @@ input[type="radio"].visually-hidden {
     text-decoration: none;
 
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     background: linear-gradient(to top, #e74a35, #f26843);
 
     box-shadow: 0 1px 2px #ac1000;
@@ -86,6 +86,10 @@ input[type="radio"].visually-hidden {
 
 .button:focus {
     outline: none;
+}
+
+.main-header {
+    min-height: 647px;
 }
 
 .header-top {
@@ -181,6 +185,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 37px;
     left: -5px;
+    z-index: 1;
 
     display: none;
     width: 142px;
@@ -292,6 +297,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     top: 38px;
     right: 0;
+    z-index: 1;
 
     display: none;
     width: 341px;
@@ -375,7 +381,7 @@ input[type="radio"].visually-hidden {
 
 .login-button:hover,
 .login-button-wrap:hover .login-button,
-.login:hover .login-button, 
+.login:hover .login-button,
 .header-cart-button:hover,
 .header-cart:hover .header-cart-button {
     color: #323232;
@@ -611,12 +617,136 @@ input[type="radio"].visually-hidden {
     margin-left: auto;
 }
 
-
-
-
-
 .site-info {
     position: absolute;
-    top: 150px;
+    top: 69px;
     right: 0;
+
+    width: 170px;
+
+    text-align: right;
+}
+
+.work-hours {
+    display: block;
+    padding-bottom: 6px;
+
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contact-telephone {
+    display: block;
+
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.header-promo {
+    position: relative;
+}
+
+.slider {
+    display: block;
+}
+
+.slider-2 {
+    display: none;
+}
+
+.slider-3 {
+    display: none;
+}
+
+.slider-title {
+    max-width: 670px;
+    margin: 0 auto;
+    padding-top: 321px;
+    padding-bottom: 29px;
+
+    font-size: 60px;
+    line-height: 60px;
+}
+
+.slider-logo {
+    position: absolute;
+    top: -73px;
+    left: 50px;
+    z-index: -1;
+}
+
+.slider-1 .slider-logo {
+    top: -73px;
+    left: 50px;
+}
+
+.slider-2 .slider-logo {
+    top: -73px;
+    left: 20px;
+}
+
+.slider-3 .slider-logo {
+    top: -73px;
+    left: 25px;
+}
+
+.slider-1 img {
+    width: 1045px;
+    height: 881px;
+}
+
+.slider-2 img {
+    width: 1065px;
+    height: 859px;
+}
+
+.slider-3 img {
+    width: 1079px;
+    height: 854px;
+}
+
+.slider-button {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.slider-switches {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+}
+
+.switches-list {
+    display: block;
+    width: 79px;
+    height: 21px;
+}
+
+.switch {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 4px;
+
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.switch:last-child {
+    margin-right: 0;
+}
+
+.switch.active,
+.switch.active:hover {
+    background-color: #ffffff;
+}
+
+.switch:hover {
+    background-color: rgba(255, 255, 255, 0.4);
 }
