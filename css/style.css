@@ -916,3 +916,70 @@ input[type="radio"].visually-hidden {
 .ice-cream-title span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+.features {
+    padding: 24px 21px;
+
+    background: url("../img/waffle-pattern.jpg") center repeat;
+    border-radius: 10px;
+}
+
+.shop-info {
+    display: block;
+    padding-bottom: 21px;
+
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.features-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    position: relative;
+
+    width: 540px;
+    padding-left: 56px;
+
+    box-sizing: border-box;
+    color: #323232;
+}
+
+.feature-item:nth-child(-n + 2) {
+    margin-bottom: 23px;
+}
+
+.feature-item:nth-child(2n + 1) {
+    margin-right: 25px;
+}
+
+.feature-item::before {
+    content: "";
+
+    position: absolute;
+    top: -15px;
+    left: 0;
+
+    width: 49px;
+    height: 49px;
+}
+
+.feature-item:first-child::before {
+    background: url("../img/feature-item-1.svg") center no-repeat;
+}
+
+.feature-item:nth-child(2)::before {
+    background: url("../img/feature-item-2.svg") center no-repeat;
+}
+
+.feature-item:nth-child(3)::before {
+    background: url("../img/feature-item-3.svg") center no-repeat;
+}
+
+.feature-item:last-child::before {
+    background: url("../img/feature-item-4.svg") center no-repeat;
+}
