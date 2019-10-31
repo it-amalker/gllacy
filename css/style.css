@@ -989,12 +989,16 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-and-newsletter-wrapper {
+    display: flex;
+
     margin-bottom: 40px;
 }
 
 .blog {
     display: block;
     width: 560px;
+    margin-right: 26px;
+    ;
     padding: 24px 0 80px 20px;
 
     box-sizing: border-box;
@@ -1035,4 +1039,52 @@ input[type="radio"].visually-hidden {
 
 .blog-title:hover span {
     box-shadow: inset 0 -2px 0 #f9cdc4, inset 0 -3px 0 #f9cdc4;
+}
+
+.newsletter {
+    width: 560px;
+    padding: 5px;
+
+    background-image: linear-gradient(135deg, #ffffff 12.50%, #92cdff 12.50%, #92cdff 25%, #ffffff 25%, #ffffff 37.50%, #fe9e90 37.50%, #fe9e90 50%, #ffffff 50%, #ffffff 62.50%, #92cdff 62.50%, #92cdff 75%, #ffffff 75%, #ffffff 87.50%, #fe9e90 87.50%, #fe9e90 100%);
+    background-size: 80px 80px;
+    border-radius: 10px;
+}
+
+.newsletter-wrap {
+    padding: 30px 21px;
+
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.newsletter-info {
+    padding-bottom: 38px;
+
+    color: #5a5a5a;
+}
+
+.newsletter-form input {
+    width: 368px;
+    padding: 10px 14px;
+
+    box-sizing: border-box;
+    font: inherit;
+    color: #999999;
+
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.newsletter-form input::placeholder {
+    font: inherit;
+    color: #999999;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+}
+
+.newsletter-form-button {
+    width: 129px;
+    margin-left: 11px;
 }
