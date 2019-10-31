@@ -999,12 +999,11 @@ input[type="radio"].visually-hidden {
     width: 560px;
     margin-right: 26px;
     ;
-    padding: 24px 0 80px 20px;
+    padding: 24px 255px 24px 20px;
 
     box-sizing: border-box;
     color: #323232;
 
-    background-color: #ffffff;
     background: url("../img/blog-bg.jpg") 18% 42% no-repeat;
 
     border-radius: 10px;
@@ -1034,11 +1033,11 @@ input[type="radio"].visually-hidden {
 }
 
 .blog a:hover {
-    color: #f9cdc4;
+    color: #e84d37;
 }
 
 .blog-title:hover span {
-    box-shadow: inset 0 -2px 0 #f9cdc4, inset 0 -3px 0 #f9cdc4;
+    box-shadow: inset 0 -2px 0 #e84d37, inset 0 -3px 0 #e84d37;
 }
 
 .newsletter {
@@ -1086,5 +1085,72 @@ input[type="radio"].visually-hidden {
 
 .newsletter-form-button {
     width: 129px;
-    margin-left: 11px;
+    margin-left: 10px;
+}
+
+.contact-map {
+    position: relative;
+
+    display: block;
+    width: 100%;
+    height: 429px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+.contact-info {
+    position: absolute;
+    top: 62px;
+    right: 27px;
+
+    width: 302px;
+    height: 305px;
+    padding: 30px 25px;
+
+    box-sizing: border-box;
+
+    background-color: #fdfefe;
+    border-radius: 10px;
+}
+
+.contact-address,
+.contact-telephone {
+    font-size: 14px;
+    line-height: 20px;
+    color: #323232;
+}
+
+.contact-address span,
+.contact-telephone span {
+    display: inline-block;
+
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.contact-address span {
+    padding-top: 3px;
+    padding-bottom: 18px;
+}
+
+.contact-telephone span {
+    padding-top: 6px;
+    padding-bottom: 3px;
+}
+
+.contact-telephone {
+    padding-bottom: 23px;
+}
+
+.contact-map-button {
+    display: block;
+    width: 252px;
+    margin: 0 auto;
 }
