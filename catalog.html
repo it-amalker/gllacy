@@ -17,7 +17,7 @@
             </div>
             <nav class="main-navigation">
                 <ul class="main-menu">
-                    <li class="menu-item dropdown-menu">
+                    <li class="menu-item dropdown-menu current">
                         <a href="#"><span>Каталог</span></a>
                         <ul class="main-menu-catalog">
                             <li class="main-menu-catalog-item"><a>Новинки</a></li>
@@ -107,8 +107,8 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="breadcrumbs container">
+    <main class="container">
+        <section class="breadcrumbs">
             <ul class="breadcrumbs-list">
                 <li class="breadcrumbs-item"><a href="index.html"><span>Главная</span><span>»</span></a></li>
                 <li class="breadcrumbs-item"><a href="#"><span>Каталог</span><span>»</span></a></li>
@@ -119,7 +119,7 @@
         <section class="filter">
             <form class="filter-form" action="" method="get">
                 <fieldset class="filter-sort">
-                    <legend class="filter-sort-title">Сортировка:</legend>
+                    <legend class="filter-title">Сортировка:</legend>
                     <select class="filter-sort-select" name="filter-select">
                         <option value="popular" selected>по популярности</option>
                         <option value="sort-low-price">сначала недорогие</option>
@@ -128,7 +128,7 @@
                     </select>
                 </fieldset>
                 <fieldset class="filter-price-range">
-                    <legend class="filter-price-range-title">Цена: 100 руб. – 500 руб.</legend>
+                    <legend class="filter-title">Цена: 100 руб. – 500 руб.</legend>
                     <div class="filter-range">
                         <div class="range-line">
                             <div class="control-range control-range-from"><span class="visually-hidden">Цена
@@ -140,7 +140,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="filter-fatness">
-                    <legend class="filter-fatness-title">Жирность:</legend>
+                    <legend class="filter-title">Жирность:</legend>
                     <input type="radio" name="fatness-range" id="0-percent">
                     <label for="0-percent">0%</label>
                     <input type="radio" name="fatness-range" id="up-to-10-percent" checked>
@@ -151,7 +151,7 @@
                     <label for="more-30-percent">выше 30%</label>
                 </fieldset>
                 <fieldset class="filter-filler">
-                    <legend class="filter-filler-title">Наполнители:</legend>
+                    <legend class="filter-title">Наполнители:</legend>
                     <input type="checkbox" name="choco" id="choco" checked>
                     <label for="choco">шоколадные</label>
                     <input type="checkbox" name="sugar" id="sugar" checked>
@@ -163,7 +163,7 @@
                     <input type="checkbox" name="jam" id="jam">
                     <label for="jam">джемы</label>
                 </fieldset>
-                <button type="submit">Применить</button>
+                <button class="button filter-form-button" type="submit">Применить</button>
             </form>
         </section>
         <section class="catalog">
