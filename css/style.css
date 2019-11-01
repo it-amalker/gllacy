@@ -816,16 +816,23 @@ input[type="radio"].visually-hidden {
     margin-bottom: 40px;
 }
 
-.ice-cream {
+.catalog-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ice-cream,
+.catalog-card {
     position: relative;
-    z-index: 0;
+
 
     display: inline-block;
     width: 267px;
     margin-right: 22px;
 }
 
-.ice-cream:hover .ice-cream-cover {
+.ice-cream:hover .ice-cream-cover,
+.catalog-card:hover .catalog-cover {
     display: block;
 }
 
@@ -842,15 +849,17 @@ input[type="radio"].visually-hidden {
     background: url("../img/hit-icon.svg") center no-repeat;
 }
 
-.ice-cream:nth-child(4n + 4) {
+.ice-cream:nth-child(4n + 4),
+.catalog-card:nth-child(4n + 4) {
     margin-right: 0;
 }
 
-.ice-cream-cover {
+.ice-cream-cover,
+.catalog-cover {
     position: absolute;
     top: -6px;
     left: -13px;
-    z-index: -1;
+    z-index: 1;
 
     display: none;
     width: 293px;
@@ -862,21 +871,23 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
-.ice-cream-preview-button {
+.ice-cream-preview-button,
+.card-preview-button {
     display: block;
     width: 200px;
     margin: 0 auto;
     margin-top: 339px;
-
 }
 
-.ice-cream-logo img {
+.ice-cream-logo img,
+.catalog-card img {
     display: block;
     width: 267px;
     height: 267px;
 }
 
-.ice-cream-price {
+.ice-cream-price,
+.catalog-card-price {
     position: absolute;
     top: 209px;
     left: 0;
@@ -888,7 +899,8 @@ input[type="radio"].visually-hidden {
     text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.ice-cream-price span {
+.ice-cream-price span,
+.catalog-card-price span {
     position: relative;
 
     padding-left: 36px;
@@ -896,7 +908,8 @@ input[type="radio"].visually-hidden {
     font-size: 30px;
 }
 
-.ice-cream-price span::before {
+.ice-cream-price span::before,
+.catalog-card-price span::before {
     content: "";
 
     position: absolute;
@@ -911,20 +924,26 @@ input[type="radio"].visually-hidden {
     filter: drop-shadow(1px 1px 3px rgba(49, 50, 53, 0.5));
 }
 
-.ice-cream a {
+.ice-cream a,
+.catalog-card a {
     color: #ffffff;
     text-decoration: none;
 }
 
-.ice-cream a:hover {
+.ice-cream a:hover,
+.catalog-card a:hover {
     color: #ffbc9e;
 }
 
-.ice-cream-title span:hover {
+.ice-cream-title span:hover,
+.catalog-card-title span:hover {
     border-bottom: 1px solid #ffbc9e;
 }
 
-.ice-cream-title {
+.ice-cream-title,
+.catalog-card-title {
+    position: relative;
+    z-index: 1;
     padding-top: 17px;
 
     font-size: 16px;
@@ -933,7 +952,8 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.ice-cream-title span {
+.ice-cream-title span,
+.catalog-card-title span {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1190,7 +1210,9 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
 
-    padding: 18px 0 24px 0;
+    padding: 17px 0 24px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.3)
 }
 
 .social {
