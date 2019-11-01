@@ -666,8 +666,12 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.slider {
+.slider.active {
     display: block;
+}
+
+.slider-1 {
+    display: none;
 }
 
 .slider-2 {
