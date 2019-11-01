@@ -1497,6 +1497,10 @@ input[type="radio"].visually-hidden {
     line-height: 41px;
 }
 
+.filter {
+    margin-bottom: 40px;
+}
+
 .filter-form {
     display: flex;
     justify-content: space-between;
@@ -1631,4 +1635,221 @@ input[type="radio"].visually-hidden {
 .control-range-to:hover {
     top: -9px;
     left: 110px;
+}
+
+.filter-fatness-list {
+    display: block;
+    width: 415px;
+    padding: 7px 0;
+
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
+
+.filter-fatness-item,
+.filter-filler-item {
+    display: inline-block;
+}
+
+.filter-fatness-item label,
+.filter-filler-item label {
+    position: relative;
+
+    padding-left: 46px;
+
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.filter-fatness-item:first-child label {
+    padding-left: 44px;
+}
+
+.input-radio+label::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 14px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.input-radio:checked+label::after {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    left: 21px;
+
+    width: 8px;
+    height: 8px;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.input-radio+label:hover::before {
+    border: 3px solid rgba(255, 255, 255, 1);
+}
+
+.input-radio:checked+label:hover::after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.input-radio:checked+label:hover::after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.input-radio:disabled+label::before,
+.input-radio:disabled+label:hover::before {
+    border: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.input-radio:checked:disabled+label::after,
+.input-radio:checked:disabled+label:hover::after {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.filter-filler {
+    margin-top: 16px;
+}
+
+.filter-filler-list {
+    display: block;
+    width: 702px;
+    padding: 7px 0;
+
+    box-sizing: border-box;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+}
+
+.filter-filler-item:first-child label {
+    padding-left: 48px;
+}
+
+.filter-filler-item:nth-child(2) label {
+    padding-left: 52px;
+}
+
+.filter-filler-item:nth-child(3) label,
+.filter-filler-item:last-child label {
+    padding-left: 54px;
+}
+
+.filter-filler-item:nth-child(4) label {
+    padding-left: 56px;
+}
+
+.input-checkbox+label::before {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 18px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+
+    cursor: pointer;
+}
+
+.input-checkbox:checked+label::before {
+    content: "";
+
+    display: none;
+}
+
+.input-checkbox:checked+label::after {
+    content: "";
+
+    position: absolute;
+    top: -2px;
+    left: 18px;
+
+    width: 23px;
+    height: 20px;
+
+    background: url("../img/checkbox-on.svg") center no-repeat;
+
+    opacity: 0.8;
+
+    cursor: pointer;
+}
+
+.input-checkbox+label:hover::before {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.input-checkbox:checked+label:hover::after {
+    opacity: 1;
+}
+
+.input-checkbox:disabled+label::before,
+.input-checkbox:disabled+label:hover::before {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.input-checkbox:checked:disabled+label::after,
+.input-checkbox:checked:disabled+label:hover::after {
+    opacity: 0.4;
+}
+
+.filter-form-button {
+    display: block;
+    width: 144px;
+    margin-top: 38px;
+    padding: 7px 0;
+
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fcfdfc;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.filter-form-button:focus {
+    outline: none;
+}
+
+.filter-form-button:hover {
+    padding: 9px 0;
+
+    color: #323232;
+
+    background-color: #fcfdfc;
+    border: none;
+}
+
+.filter-form-button:active {
+    padding: 9px 0;
+
+    color: #323232;
+
+    background-color: #eaeaea;
+    border: none;
+
+    box-shadow: inset 0 2px 1px #696969;
 }

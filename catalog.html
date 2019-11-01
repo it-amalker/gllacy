@@ -141,29 +141,58 @@
                 </fieldset>
                 <fieldset class="filter-fatness">
                     <legend class="filter-title">Жирность:</legend>
-                    <input type="radio" name="fatness-range" id="0-percent">
-                    <label for="0-percent">0%</label>
-                    <input type="radio" name="fatness-range" id="up-to-10-percent" checked>
-                    <label for="up-to-10-percent">до 10%</label>
-                    <input type="radio" name="fatness-range" id="up-to-30-percent">
-                    <label for="up-to-30-percent">до 30%</label>
-                    <input type="radio" name="fatness-range" id="more-30-percent">
-                    <label for="more-30-percent">выше 30%</label>
+                    <ul class="filter-fatness-list">
+                        <li class="filter-fatness-item">
+                            <input class="input-radio visually-hidden" type="radio" name="fatness-range" id="0-percent">
+                            <label for="0-percent">0%</label>
+                        </li>
+                        <li class="filter-fatness-item">
+                            <input class="input-radio visually-hidden" type="radio" name="fatness-range"
+                                id="up-to-10-percent" checked>
+                            <label for="up-to-10-percent">до 10%</label>
+                        </li>
+                        <li class="filter-fatness-item">
+                            <input class="input-radio visually-hidden" type="radio" name="fatness-range"
+                                id="up-to-30-percent">
+                            <label for="up-to-30-percent">до 30%</label>
+                        </li>
+                        <li class="filter-fatness-item">
+                            <input class="input-radio visually-hidden" type="radio" name="fatness-range"
+                                id="more-30-percent">
+                            <label for="more-30-percent">выше 30%</label>
+                        </li>
+                    </ul>
                 </fieldset>
                 <fieldset class="filter-filler">
                     <legend class="filter-title">Наполнители:</legend>
-                    <input type="checkbox" name="choco" id="choco" checked>
-                    <label for="choco">шоколадные</label>
-                    <input type="checkbox" name="sugar" id="sugar" checked>
-                    <label for="sugar">сахарные присыпки</label>
-                    <input type="checkbox" name="fruits" id="fruits">
-                    <label for="fruits">фрукты</label>
-                    <input type="checkbox" name="syrup" id="syrup">
-                    <label for="syrup">сиропы</label>
-                    <input type="checkbox" name="jam" id="jam">
-                    <label for="jam">джемы</label>
+                    <ul class="filter-filler-list">
+                        <li class="filter-filler-item">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="choco" id="choco"
+                                checked>
+                            <label for="choco">шоколадные</label>
+                        </li>
+                        <li class="filter-filler-item">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="sugar" id="sugar"
+                                checked>
+                            <label for="sugar">сахарные присыпки</label>
+                        </li>
+                        <li class="filter-filler-item">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="fruits" id="fruits">
+                            <label for="fruits">фрукты</label>
+                        </li>
+                        <li class="filter-filler-item">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="syrup" id="syrup">
+                            <label for="syrup">сиропы</label>
+                        </li>
+                        <li class="filter-filler-item">
+                            <input class="input-checkbox visually-hidden" type="checkbox" name="jam" id="jam">
+                            <label for="jam">джемы</label>
+                        </li>
+                    </ul>
                 </fieldset>
-                <button class="button filter-form-button" type="submit">Применить</button>
+                <div class="filter-form-button-wrap">
+                    <button class="filter-form-button" type="submit">Применить</button>
+                </div>
             </form>
         </section>
         <section class="catalog">
