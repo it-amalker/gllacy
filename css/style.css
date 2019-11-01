@@ -92,6 +92,10 @@ input[type="radio"].visually-hidden {
     min-height: 647px;
 }
 
+.catalog-main-header {
+    min-height: 72px;
+}
+
 .header-top {
     position: relative;
 
@@ -234,8 +238,8 @@ input[type="radio"].visually-hidden {
     background-color: #f6b5a5;
 }
 
-.main-menu-catalog-item.active:nth-child(n + 2),
-.main-menu-catalog-item.active:nth-child(n + 2) a:hover,
+.main-menu-catalog-item.current:nth-child(n + 2),
+.main-menu-catalog-item.current:nth-child(n + 2) a:hover,
 .main-menu-catalog-item:nth-child(n + 2) a:active {
     background-color: #d07058;
 }
@@ -356,6 +360,10 @@ input[type="radio"].visually-hidden {
     padding-bottom: 5px;
 }
 
+.header-cart {
+    width: 117px;
+}
+
 .login:hover .login-form {
     display: block;
 }
@@ -378,7 +386,7 @@ input[type="radio"].visually-hidden {
 .login-button,
 .header-cart-button {
     display: block;
-    padding: 8px 16px 8px 44px;
+    padding: 8px 0 8px 44px;
 
     font-size: 14px;
     line-height: 16px;
@@ -1141,14 +1149,14 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-address,
-.contact-telephone {
+.contact-map-telephone {
     font-size: 14px;
     line-height: 20px;
     color: #323232;
 }
 
 .contact-address span,
-.contact-telephone span {
+.contact-map-telephone span {
     display: inline-block;
 
     font-size: 18px;
@@ -1162,12 +1170,12 @@ input[type="radio"].visually-hidden {
     padding-bottom: 18px;
 }
 
-.contact-telephone span {
+.contact-map-telephone span {
     padding-top: 6px;
     padding-bottom: 3px;
 }
 
-.contact-telephone {
+.contact-map-telephone {
     padding-bottom: 23px;
 }
 
@@ -1335,6 +1343,7 @@ input[type="radio"].visually-hidden {
     top: 50%;
     left: 50%;
 
+    display: none;
     width: 477px;
     height: 442px;
     margin-left: -238px;
@@ -1450,4 +1459,32 @@ input[type="radio"].visually-hidden {
 
 .feedback-close-button::after {
     transform: rotate(45deg);
+}
+
+.breadcrumbs {
+    padding: 29px 0 4px 0;
+}
+
+.breadcrumbs-item {
+    display: inline-block;
+}
+
+.breadcrumbs-item a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumbs-item span:first-of-type:hover {
+    color: #ffbc9e;
+    box-shadow: 0 1px 0 #ffbc9e;
+}
+
+.breadcrumbs-item span:first-of-type {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.breadcrumbs-item span:last-of-type {
+    padding: 0 5px 0 8px;
 }
