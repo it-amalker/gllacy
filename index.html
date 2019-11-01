@@ -351,17 +351,22 @@
     </footer>
     <div class="modal-feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
-        <p>Мы обязательно вам ответим!</p>
-        <form action="" method="post">
-            <label class="visually-hidden" for="name">Ваше имя</label>
-            <input type="text" name="name" id="name" placeholder="Как вас зовут?">
-            <label class="visually-hidden" for="feedback-email">Ваша почта</label>
-            <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
-            <label class="visually-hidden" for="letter">Текст письма</label>
-            <textarea name="letter" id="letter" placeholder="Напишите что-нибудь..."></textarea>
-            <button class="button feedback-button" type="submit">Отправить</button>
-        </form>
-        <button class="feedback-close-button" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <div class="modal-feedback-wrapper">
+            <p>Мы обязательно вам ответим!</p>
+            <form action="" method="post">
+                <label class="visually-hidden" for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Как вас зовут?">
+                <label class="visually-hidden" for="feedback-email">Ваша почта</label>
+                <input type="email" name="feedback-email" id="feedback-email" placeholder="Ваша почта для ответа?">
+                <label class="visually-hidden" for="letter">Текст письма</label>
+                <textarea name="letter" id="letter" placeholder="Напишите что-нибудь..."></textarea>
+                <button class="button feedback-button" type="submit">Отправить</button>
+            </form>
+            <div class="feedback-close-button-wrap">
+                <button class="feedback-close-button" type="button"><span
+                        class="visually-hidden">Закрыть</span></button>
+            </div>
+        </div>
     </div>
 </body>
 

@@ -1055,8 +1055,7 @@ input[type="radio"].visually-hidden {
     width: 560px;
     padding: 5px;
 
-    background-image: linear-gradient(135deg, #ffffff 12.50%, #92cdff 12.50%, #92cdff 25%, #ffffff 25%, #ffffff 37.50%, #fe9e90 37.50%, #fe9e90 50%, #ffffff 50%, #ffffff 62.50%, #92cdff 62.50%, #92cdff 75%, #ffffff 75%, #ffffff 87.50%, #fe9e90 87.50%, #fe9e90 100%);
-    background-size: 80px 80px;
+    background-image: repeating-linear-gradient(135deg, #ffffff 0, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
     border-radius: 10px;
 }
 
@@ -1075,7 +1074,7 @@ input[type="radio"].visually-hidden {
 
 .newsletter-form input {
     width: 368px;
-    padding: 10px 14px;
+    padding: 9px 14px;
 
     box-sizing: border-box;
     font-size: 16px;
@@ -1093,13 +1092,13 @@ input[type="radio"].visually-hidden {
 }
 
 .newsletter-form input:hover {
-    padding: 9px 13px;
+    padding: 8px 13px;
 
     border: 2px solid #c7c6c5;
 }
 
 .newsletter-form input:focus {
-    padding: 9px 13px;
+    padding: 8px 13px;
 
     border: 2px solid #8fbdec;
 
@@ -1227,7 +1226,6 @@ input[type="radio"].visually-hidden {
     margin-left: -16px;
 
     fill: rgba(255, 255, 255, 0.8);
-
 }
 
 .social-item:hover svg {
@@ -1236,6 +1234,9 @@ input[type="radio"].visually-hidden {
 
 .social-item:active svg {
     fill: rgba(233, 233, 233, 1);
+
+    box-shadow: inset 0 2px 1px #888888;
+    border-radius: 50%;
 }
 
 .footer-navigation {
@@ -1327,4 +1328,126 @@ input[type="radio"].visually-hidden {
     color: #ffbc9e;
 
     border-bottom: 1px solid #ffbc9e;
+}
+
+.modal-feedback {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 477px;
+    height: 442px;
+    margin-left: -238px;
+    margin-top: -211px;
+
+    background-color: #f8f7f4;
+    border-radius: 10px;
+}
+
+.modal-feedback-wrapper {
+    position: relative;
+
+    padding: 19px 24px 25px 24px;
+}
+
+.modal-feedback-wrapper p {
+    padding-bottom: 22px;
+
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+    color: #323232;
+}
+
+.modal-feedback-wrapper input,
+.modal-feedback-wrapper textarea {
+    width: 267px;
+    margin-bottom: 20px;
+    padding: 9px 14px;
+
+    font-size: 16px;
+    line-height: 24px;
+    color: #323232;
+
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.modal-feedback-wrapper textarea {
+    display: block;
+    width: 428px;
+    height: 155px;
+    margin-bottom: 25px;
+
+    box-sizing: border-box;
+
+    resize: none;
+}
+
+.modal-feedback-wrapper input::placeholder,
+.modal-feedback-wrapper textarea::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.modal-feedback-wrapper input:hover,
+.modal-feedback-wrapper textarea:hover {
+    padding: 8px 13px;
+
+    border: 2px solid #c7c6c5;
+}
+
+.modal-feedback-wrapper input:focus,
+.modal-feedback-wrapper textarea:focus {
+    padding: 8px 13px;
+
+    border: 2px solid #8fbdec;
+
+    outline: none;
+}
+
+.feedback-button {
+    display: block;
+    width: 139px;
+    margin-left: auto;
+}
+
+.feedback-close-button-wrap {
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+.feedback-close-button {
+    position: relative;
+
+    width: 18px;
+    height: 18px;
+    padding: 0;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.feedback-close-button::before,
+.feedback-close-button::after {
+    content: "";
+
+    position: absolute;
+    top: 9;
+    left: 0;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: #323232;
+
+    transform: rotate(-45deg);
+}
+
+.feedback-close-button::after {
+    transform: rotate(45deg);
 }
