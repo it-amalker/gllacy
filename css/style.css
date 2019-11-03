@@ -532,14 +532,22 @@ input[type="radio"].visually-hidden {
 
     background-color: #f8f7f4;
     border-radius: 5px;
+
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .cart-goods-table {
     width: 510px;
     margin: 8px 0 14px 0;
 
+    display: block;
+
     border: none;
     border-collapse: collapse;
+}
+
+.cart-goods-row td:first-child {
+    width: 15px;
 }
 
 .cart-goods-row:first-child>td {
@@ -547,8 +555,10 @@ input[type="radio"].visually-hidden {
 }
 
 .cart-goods-row:last-child>td {
-    padding-bottom: 18px;
+    padding-bottom: 16px;
+}
 
+.cart-goods-row:last-child {
     border-bottom: 1px solid #cacac7;
 }
 
@@ -560,19 +570,20 @@ input[type="radio"].visually-hidden {
     color: #323232;
 }
 
-.cart-goods-table .table-goods-name {
+.cart-goods-row .table-goods-name {
     position: relative;
 
-    width: 294px;
-    padding-left: 61px;
+    display: block;
+    width: 216px;
+    padding-left: 57px;
 }
 
 .cart-goods-row:first-child .table-goods-name::before {
     content: "";
 
     position: absolute;
-    top: -6px;
-    left: 9px;
+    top: -9px;
+    left: 11px;
 
     width: 33px;
     height: 33px;
@@ -584,8 +595,8 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    top: -6px;
-    left: 9px;
+    top: -9px;
+    left: 11px;
 
     width: 33px;
     height: 33px;
@@ -593,15 +604,17 @@ input[type="radio"].visually-hidden {
     background: url("../img/cart-goods-2.png") center no-repeat;
 }
 
-.table-goods-price {
-    width: 120px;
+.cart-goods-row .table-goods-price {
+    width: 100px;
+    padding-left: 31px;
 
-    text-align: center;
+    text-align: left;
     vertical-align: top;
 }
 
-.table-goods-price-total {
-    width: 84px;
+.cart-goods-row .table-goods-price-total {
+    width: 83px;
+    padding-left: 6px;
 
     text-align: center;
     vertical-align: top;
@@ -610,14 +623,19 @@ input[type="radio"].visually-hidden {
 .cart-close-button {
     position: relative;
 
-    width: 11px;
-    height: 11px;
+    display: block;
+    width: 15px;
+    height: 15px;
     padding: 0;
 
     background-color: transparent;
     border: none;
 
     cursor: pointer;
+}
+
+.cart-goods-row:last-child .cart-close-button {
+    margin-top: -11px;
 }
 
 .cart-close-button::before,
@@ -628,8 +646,8 @@ input[type="radio"].visually-hidden {
     top: 5px;
     left: 0;
 
-    width: 11px;
-    height: 2px;
+    width: 15px;
+    height: 1px;
 
     background-color: #323232;
 
@@ -839,7 +857,7 @@ input[type="radio"].visually-hidden {
 .catalog-cards {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 82px;
+    margin-bottom: 79px;
 }
 
 .ice-cream,
@@ -849,6 +867,10 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     width: 267px;
     margin-right: 22px;
+}
+
+.catalog-card {
+    margin-right: 26px;
 }
 
 .catalog-card:not(:nth-child(-n + 4)) {
@@ -968,7 +990,8 @@ input[type="radio"].visually-hidden {
 .catalog-card-title {
     position: relative;
     z-index: 1;
-    padding-top: 15px;
+
+    padding-top: 14px;
 
     font-size: 16px;
     line-height: 22px;
@@ -1543,7 +1566,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
-    margin-top: 29px;
+    margin-top: 22px;
 }
 
 .breadcrumbs-item {
@@ -1567,11 +1590,11 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs-item span:last-of-type {
-    padding: 0 5px 0 8px;
+    padding: 0 5px 0 6px;
 }
 
 .page-title {
-    margin: 4px 0 22px 0;
+    margin: 3px 0 25px 0;
 
     font-size: 35px;
     line-height: 41px;
@@ -1681,8 +1704,6 @@ input[type="radio"].visually-hidden {
 
 .control-range {
     position: absolute;
-    top: -8px;
-    left: 6px;
     z-index: 1;
 
     width: 4px;
@@ -1693,6 +1714,11 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 
     cursor: pointer;
+}
+
+.control-range-from {
+    top: -8px;
+    left: 13px;
 }
 
 .control-range-to {
@@ -1905,7 +1931,7 @@ input[type="radio"].visually-hidden {
 
     background-color: rgba(255, 255, 255, 0.2);
     border: 2px solid #fcfdfc;
-    border-radius: 15px;
+    border-radius: 20px;
 
     cursor: pointer;
 }
@@ -1943,7 +1969,7 @@ input[type="radio"].visually-hidden {
 .pagination-list {
     position: relative;
 
-    padding-left: 22px;
+    padding-left: 23px;
 }
 
 .pagination-list::before,
@@ -1951,10 +1977,10 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    top: 6px;
+    top: 8px;
 
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
 
     cursor: pointer;
 }
@@ -1981,6 +2007,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item {
     display: inline-block;
+    margin-left: -1px;
 }
 
 .pagination-item a {
