@@ -55,11 +55,11 @@ input[type="radio"].visually-hidden {
 
 .button {
     display: inline-block;
-    padding: 11px 0;
+    padding: 10px 0;
 
+    font: inherit;
     font-size: 18px;
     line-height: 24px;
-    font: inherit;
     color: inherit;
     font-weight: bold;
     text-align: center;
@@ -123,7 +123,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     width: 432px;
-    margin-left: 10px;
+    margin-left: 14px;
 }
 
 .dropdown-menu:hover .main-menu-catalog {
@@ -193,35 +193,35 @@ input[type="radio"].visually-hidden {
 .main-menu-catalog {
     position: absolute;
     top: 37px;
-    left: -5px;
+    left: -11px;
     z-index: 1;
 
     display: none;
-    width: 142px;
+    width: 143px;
 
     background-color: #f8f7f4;
-    border-radius: 3px;
+    border-radius: 5px;
 
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .main-menu-catalog-item {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .main-menu-catalog-item:first-child {
-    margin: 0 9px 3px 6px;
+    margin: 0 9px 4px 6px;
 
     border-bottom: 1px solid #d1d0ce;
 }
 
-.main-menu-catalog-item:nth-child(2) {
-    margin-bottom: 2px;
+.main-menu-catalog-item:last-child {
+    margin-bottom: 7px;
 }
 
 .main-menu-catalog-item a {
     display: block;
-    padding: 6px 0 6px 15px;
+    padding: 6px 0 6px 20px;
 
     font-size: 14px;
     line-height: 16px;
@@ -230,7 +230,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-menu-catalog-item:first-child a {
-    padding: 11px 0 11px 9px;
+    padding: 11px 0 11px 14px;
 
     font-weight: bold;
 }
@@ -251,8 +251,8 @@ input[type="radio"].visually-hidden {
 
 .header-search {
     position: relative;
-    margin-left: 299px;
-    padding-bottom: 5px;
+    margin-left: 290px;
+    padding-bottom: 3px;
 }
 
 .header-search:hover .header-search-form {
@@ -304,7 +304,7 @@ input[type="radio"].visually-hidden {
 
 .header-search-form {
     position: absolute;
-    top: 38px;
+    top: 36px;
     right: 0;
     z-index: 1;
 
@@ -317,12 +317,14 @@ input[type="radio"].visually-hidden {
 
     background-color: #f8f7f4;
     border-radius: 5px;
+
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .header-search-form input,
 .login-form input {
     width: 311px;
-    padding: 9px 5px 9px 14px;
+    padding: 9px 5px 9px 12px;
 
     box-sizing: border-box;
     font-size: 16px;
@@ -335,7 +337,7 @@ input[type="radio"].visually-hidden {
 
 .header-search-form input::placeholder,
 .login-form input::placeholder {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     color: #999999;
 }
@@ -362,7 +364,7 @@ input[type="radio"].visually-hidden {
 
     width: 92px;
     margin-left: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 .header-cart {
@@ -422,7 +424,7 @@ input[type="radio"].visually-hidden {
 
 .login-form {
     position: absolute;
-    top: 38px;
+    top: 36px;
     right: 0;
     z-index: 1;
 
@@ -434,11 +436,17 @@ input[type="radio"].visually-hidden {
 
     background-color: #f8f7f4;
     border-radius: 5px;
+
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .login-form input {
-    width: 239px;
+    width: 241px;
     margin-bottom: 20px;
+}
+
+.login-form input:last-of-type {
+    margin-bottom: 18px;
 }
 
 .login-menu-submit {
@@ -447,12 +455,16 @@ input[type="radio"].visually-hidden {
 }
 
 .login-form-button {
-    width: 102px;
+    display: block;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 22px/30px;
 }
 
 .login-menu-options {
-    width: 125px;
-    margin-left: 19px;
+    width: 121px;
+    margin-left: 20px;
+    margin-top: 1px;
 }
 
 .login-menu-option a {
@@ -461,6 +473,10 @@ input[type="radio"].visually-hidden {
     font-size: 13px;
     line-height: 24px;
     color: #323232;
+}
+
+.login-menu-option:first-child a {
+    margin-bottom: -2px;
 }
 
 .login-menu-option a:hover {
@@ -503,7 +519,7 @@ input[type="radio"].visually-hidden {
 
 .header-cart-goods {
     position: absolute;
-    top: 38px;
+    top: 36px;
     right: 0;
     z-index: 1;
 
@@ -632,7 +648,6 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     color: #323232;
     text-align: right;
-
 }
 
 .button-order {
@@ -643,7 +658,7 @@ input[type="radio"].visually-hidden {
 
 .site-info {
     position: absolute;
-    top: 69px;
+    top: 72px;
     right: 0;
 
     width: 170px;
@@ -674,26 +689,19 @@ input[type="radio"].visually-hidden {
     display: block;
 }
 
-.slider-1 {
-    display: none;
-}
-
-.slider-2 {
-    display: none;
-}
-
+.slider-1,
+.slider-2,
 .slider-3 {
     display: none;
 }
 
 .slider-title {
     max-width: 670px;
-    margin: 0 auto;
-    padding-top: 321px;
-    padding-bottom: 29px;
+    padding: 320px 0 29px 239px;
 
     font-size: 60px;
     line-height: 60px;
+    text-align: center;
 }
 
 .slider-logo {
@@ -710,12 +718,12 @@ input[type="radio"].visually-hidden {
 
 .slider-2 .slider-logo {
     top: -73px;
-    left: 20px;
+    left: 31px;
 }
 
 .slider-3 .slider-logo {
     top: -73px;
-    left: 25px;
+    left: 33px;
 }
 
 .slider-1 img {
@@ -744,23 +752,23 @@ input[type="radio"].visually-hidden {
 
 .slider-switches {
     position: absolute;
-    bottom: 24px;
+    bottom: 22px;
     left: 0;
 }
 
 .switches-list {
     display: block;
-    width: 79px;
+    width: 81px;
     height: 21px;
 }
 
 .switch {
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin-right: 4px;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
 
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 50%;
 
     cursor: pointer;
@@ -781,21 +789,21 @@ input[type="radio"].visually-hidden {
 
 .bonus {
     display: inline-block;
-    width: 520px;
-    padding: 20px;
+    width: 521px;
+    padding: 16px 20px 23px 18px;
     margin-bottom: 40px;
 
     border-radius: 10px;
 }
 
 .bonus:first-child {
-    margin-right: 22px;
+    margin-right: 23px;
 
-    background: url("../img/bonus-bg-1.jpg") center no-repeat;
+    background: url("../img/bonus-bg-1.jpg") 22% 51% no-repeat;
 }
 
 .bonus:last-child {
-    background: url("../img/bonus-bg-2.jpg") center no-repeat;
+    background: url("../img/bonus-bg-2.jpg") 80% 47% no-repeat;
 }
 
 .bonus-title {
@@ -820,8 +828,12 @@ input[type="radio"].visually-hidden {
     margin-left: auto;
 }
 
+.bonus:last-child .bonus-button {
+    width: 189px;
+}
+
 .ice-cream-catalog {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .catalog-cards {
@@ -925,8 +937,8 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    top: -2px;
-    left: 7px;
+    top: 0;
+    left: 5px;
 
     width: 26px;
     height: 31px;
@@ -956,7 +968,7 @@ input[type="radio"].visually-hidden {
 .catalog-card-title {
     position: relative;
     z-index: 1;
-    padding-top: 17px;
+    padding-top: 15px;
 
     font-size: 16px;
     line-height: 22px;
@@ -977,7 +989,7 @@ input[type="radio"].visually-hidden {
     padding: 24px 21px;
 
     background: url("../img/waffle-pattern.jpg") center repeat;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .shop-info {
@@ -1005,11 +1017,15 @@ input[type="radio"].visually-hidden {
     color: #323232;
 }
 
+.feature-item:nth-child(2n + 2) {
+    padding-left: 58px;
+}
+
 .feature-item:nth-child(-n + 2) {
     margin-bottom: 23px;
 }
 
-.feature-item:nth-child(2n + 1) {
+.feature-item:nth-child(odd) {
     margin-right: 24px;
 }
 
@@ -1017,7 +1033,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    top: -15px;
+    top: -14px;
     left: 0;
 
     width: 49px;
@@ -1050,13 +1066,12 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 560px;
     margin-right: 26px;
-    ;
     padding: 24px 255px 24px 20px;
 
     box-sizing: border-box;
     color: #323232;
 
-    background: url("../img/blog-bg.jpg") 18% 42% no-repeat;
+    background: url("../img/blog-bg.jpg") 17% 42% no-repeat;
 
     border-radius: 10px;
 }
@@ -1067,7 +1082,8 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-info {
-    padding-bottom: 8px;
+    display: block;
+    padding-bottom: 3px;
 
     font-weight: 500;
 }
@@ -1081,7 +1097,9 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-title span {
-    box-shadow: inset 0 -2px 0 #323232, inset 0 -3px 0 #323232;
+    display: inline;
+    line-height: 22px;
+    background-image: linear-gradient(to bottom, transparent 24px, #323232 24px, #323232 26px, transparent 26px);
 }
 
 .blog a:hover {
@@ -1089,26 +1107,27 @@ input[type="radio"].visually-hidden {
 }
 
 .blog-title:hover span {
-    box-shadow: inset 0 -2px 0 #e84d37, inset 0 -3px 0 #e84d37;
+    background-image: linear-gradient(to bottom, transparent 24px, #e84d37 24px, #e84d37 26px, transparent 26px);
 }
 
 .newsletter {
-    width: 560px;
+    width: 550px;
     padding: 5px;
 
-    background-image: repeating-linear-gradient(135deg, #ffffff 0, #ffffff 10px, #92cdff 10px, #92cdff 20px, #ffffff 20px, #ffffff 30px, #fe9e90 30px, #fe9e90 40px);
+    background-image: repeating-linear-gradient(135deg, #ffffff 0, #ffffff 7px, #92cdff 7px, #92cdff 14px, #ffffff 14px, #ffffff 21px, #fe9e90 21px, #fe9e90 28px);
     border-radius: 10px;
 }
 
 .newsletter-wrap {
-    padding: 30px 21px;
+    padding: 28px 0 34px 22px;
 
     background-color: #f8f7f4;
     border-radius: 10px;
 }
 
 .newsletter-info {
-    padding-bottom: 38px;
+    max-width: 508px;
+    padding-bottom: 35px;
 
     color: #5a5a5a;
 }
@@ -1122,7 +1141,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     color: #323232;
 
-    border: 1px solid #999999;
+    border: 1px solid #b2b2b2;
     border-radius: 5px;
 }
 
@@ -1148,12 +1167,10 @@ input[type="radio"].visually-hidden {
 
 .newsletter-form-button {
     width: 129px;
-    margin-left: 10px;
+    margin-left: 7px;
 }
 
 .contact-map {
-    position: relative;
-
     display: block;
     width: 100%;
     height: 429px;
@@ -1164,6 +1181,10 @@ input[type="radio"].visually-hidden {
     height: 100%;
 
     border: none;
+}
+
+.contact-info-wrap {
+    position: relative;
 }
 
 .contact-info {
@@ -1200,12 +1221,12 @@ input[type="radio"].visually-hidden {
 
 .contact-address span {
     padding-top: 3px;
-    padding-bottom: 18px;
+    padding-bottom: 17px;
 }
 
 .contact-map-telephone span {
-    padding-top: 6px;
-    padding-bottom: 3px;
+    padding-top: 4px;
+    padding-bottom: 2px;
 }
 
 .contact-map-telephone {
@@ -1222,14 +1243,15 @@ input[type="radio"].visually-hidden {
     display: flex;
     align-items: center;
 
-    padding: 17px 0 24px 0;
+    padding: 15px 0 25px 0;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.3)
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .social {
     display: block;
     width: 293px;
+    padding-top: 14px;
 }
 
 .social-list {
@@ -1250,10 +1272,10 @@ input[type="radio"].visually-hidden {
     position: relative;
 
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
 
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
 
@@ -1284,13 +1306,14 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation {
     width: 560px;
+    padding-top: 14px;
 }
 
 .footer-menu {
     display: flex;
     flex-wrap: wrap;
     width: 333px;
-    margin-left: 129px;
+    margin-left: 107px;
 }
 
 .footer-menu-item a {
@@ -1348,11 +1371,11 @@ input[type="radio"].visually-hidden {
 
 .developer-logo {
     display: block;
-    width: 114px;
+    width: 108px;
     height: 38px;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
 
-    background: url("../img/logo-htmlacademy-small.svg") center no-repeat;
+    background: url("../img/logo-htmlacademy-small.svg") center center no-repeat;
 }
 
 .developer-info {
@@ -1387,24 +1410,7 @@ input[type="radio"].visually-hidden {
 }
 
 .overlay--show {
-    display: block;  
-}
-
-@keyframes popup-slide-in {
-    0% {
-        transform: translateY(-2000px);
-        opacity: 0;
-    }
-
-    65% {
-        transform: translateY(30px);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
+    display: block;
 }
 
 .modal-feedback--show {
@@ -2006,4 +2012,21 @@ input[type="radio"].visually-hidden {
     color: #323232;
 
     background-color: rgba(255, 255, 255, 1);
+}
+
+@keyframes popup-slide-in {
+    0% {
+        transform: translateY(-2000px);
+        opacity: 0;
+    }
+
+    65% {
+        transform: translateY(30px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
