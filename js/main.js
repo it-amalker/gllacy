@@ -7,6 +7,8 @@ let modalPopup = document.querySelector(".modal-feedback");
 let openPopupButton = document.querySelector(".contact-map-button");
 let closePopupButton = document.querySelector(".feedback-close-button");
 
+let mainBody = document.querySelector(".main-body"); //IE11 support
+
 // Sliders switch
 
 let toggleSliders = function (allSwitches, switchElement, allSliders) {
@@ -20,7 +22,8 @@ let toggleSliders = function (allSwitches, switchElement, allSliders) {
         let sliderIndex = switchesArray.indexOf(switchElement);
         switchElement.classList.add("active");
         allSliders[sliderIndex].classList.add("active");
-        document.body.style = `background-color: ${bodyBgColors[sliderIndex]}`;
+        // document.body.style = `background-color: ${bodyBgColors[sliderIndex]}`;
+        mainBody.style.setProperty('background-color', bodyBgColors[sliderIndex]); //IE11 support
     });
 }
 

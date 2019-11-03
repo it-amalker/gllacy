@@ -23,7 +23,7 @@ ul {
     list-style: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden,
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
     position: absolute;
@@ -112,7 +112,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-    min-height: 647px;
+    min-height: 606px;
 }
 
 .catalog-main-header {
@@ -165,6 +165,9 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-item>a {
+    position: relative;
+    /*IE11 support*/
+
     display: block;
     padding: 8px 14px 5px 13px;
 
@@ -176,7 +179,21 @@ input[type="radio"].visually-hidden {
     border-radius: 15px;
 }
 
-.menu-item:hover>a {
+.menu-item>a::before {
+    /*IE11 support*/
+
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+}
+
+.menu-item>a:hover {
     color: #000000;
 
     background-color: #f7f6f3;
@@ -281,7 +298,7 @@ input[type="radio"].visually-hidden {
 .header-search {
     position: relative;
     margin-left: 290px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 .header-search:hover .header-search-form {
@@ -357,6 +374,7 @@ input[type="radio"].visually-hidden {
 .header-search-form input,
 .login-form input {
     width: 311px;
+    height: 42px;
     padding: 9px 5px 9px 12px;
 
     -webkit-box-sizing: border-box;
@@ -407,14 +425,14 @@ input[type="radio"].visually-hidden {
 
 .header-search-form input:hover,
 .login-form input:hover {
-    padding: 8px 4px 8px 13px;
+    padding: 8px 4px 8px 11px;
 
     border: 2px solid #c7c6c5;
 }
 
 .header-search-form input:focus,
 .login-form input:focus {
-    padding: 8px 4px 8px 13px;
+    padding: 8px 4px 8px 11px;
 
     border: 2px solid #8fbdec;
 
@@ -427,7 +445,7 @@ input[type="radio"].visually-hidden {
 
     width: 92px;
     margin-left: 10px;
-    padding-bottom: 3px;
+    padding-bottom: 5px;
 }
 
 .header-cart {
@@ -794,7 +812,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-title {
-    max-width: 670px;
+    max-width: 671px;
     padding: 320px 0 29px 239px;
 
     font-size: 60px;
@@ -843,6 +861,7 @@ input[type="radio"].visually-hidden {
     display: block;
     width: 280px;
     margin: 0 auto;
+    margin-bottom: 41px;
 
     font-size: 32px;
     line-height: 44px;
@@ -1257,6 +1276,7 @@ input[type="radio"].visually-hidden {
 
 .newsletter-form input {
     width: 368px;
+    height: 44px;
     padding: 9px 14px;
 
     -webkit-box-sizing: border-box;
@@ -1448,11 +1468,11 @@ input[type="radio"].visually-hidden {
     fill: rgba(255, 255, 255, 0.8);
 }
 
-.social-item:hover svg {
+.social-item svg:hover {
     fill: rgba(255, 255, 255, 1);
 }
 
-.social-item:active svg {
+.social-item svg:active {
     fill: rgba(233, 233, 233, 1);
 
     -webkit-box-shadow: inset 0 2px 1px #888888;
@@ -1835,6 +1855,10 @@ input[type="radio"].visually-hidden {
     border-radius: 25px;
 }
 
+.filter-sort-select::-ms-expand {
+    display: none;
+}
+
 .filter-sort-select:focus,
 .filter-sort-select:hover {
     color: #323232;
@@ -1924,7 +1948,7 @@ input[type="radio"].visually-hidden {
 
 .control-range-from:hover {
     top: -9px;
-    left: 4px;
+    left: 11px;
 }
 
 .control-range-to:hover {
@@ -1958,6 +1982,8 @@ input[type="radio"].visually-hidden {
 
     line-height: 18px;
     font-weight: 500;
+
+    cursor: pointer;
 }
 
 .filter-fatness-item:first-child label {
@@ -1977,8 +2003,6 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.2);
     border: 3px solid rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-
-    cursor: pointer;
 }
 
 .input-radio:checked+label::after {
@@ -1993,8 +2017,6 @@ input[type="radio"].visually-hidden {
 
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
-
-    cursor: pointer;
 }
 
 .input-radio+label:hover::before {
