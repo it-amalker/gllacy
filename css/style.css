@@ -107,10 +107,6 @@ input[type="radio"].visually-hidden {
     box-shadow: inset 0 2px 2px #ac1000;
 }
 
-.button:focus {
-    outline: none;
-}
-
 .main-header {
     min-height: 606px;
 }
@@ -151,6 +147,7 @@ input[type="radio"].visually-hidden {
 }
 
 .dropdown-menu:hover .main-menu-catalog {
+    z-index: 2;
     display: block;
 }
 
@@ -207,6 +204,18 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: inset 0 2px 1px rgba(105, 105, 105, 1);
 
     box-shadow: inset 0 2px 1px rgba(105, 105, 105, 1);
+}
+
+.menu-item>a:focus {
+    color: #000000;
+
+    background-color: #f7f6f3;
+
+    outline: none;
+}
+
+.menu-item.current>a:focus {
+    color: #000000;
 }
 
 .menu-item.current>a,
@@ -305,46 +314,48 @@ input[type="radio"].visually-hidden {
     display: block;
 }
 
-.header-search-wrap {
+.header-search-button {
+    position: relative;
+
+    display: block;
     width: 33px;
     height: 33px;
+    padding: 0;
 
     background-color: rgba(248, 247, 244, 0.2);
     border-radius: 50%;
 
-    cursor: pointer;
-}
-
-.header-search-button {
-    position: relative;
-    top: 8px;
-    left: 8px;
-
-    display: block;
-    width: 17px;
-    height: 17px;
-    padding: 0;
-
-    background-color: transparent;
     border: none;
 
     cursor: pointer;
 }
 
 .header-search-button svg {
+    display: block;
     width: 17px;
     height: 17px;
+    margin: 0 auto;
 
     fill: #ffffff;
 }
 
-.header-search-wrap:hover,
-.header-search:hover .header-search-wrap {
+.header-search-button:hover,
+.header-search:hover .header-search-button {
     background-color: rgba(248, 247, 244, 1);
 }
 
-.header-search-wrap:hover svg,
+.header-search-button:hover svg,
 .header-search:hover svg {
+    fill: #000000;
+}
+
+.header-search-button:focus {
+    background-color: rgba(248, 247, 244, 1);
+
+    outline: none;
+}
+
+.header-search-button:focus svg {
     fill: #000000;
 }
 
@@ -456,23 +467,10 @@ input[type="radio"].visually-hidden {
     display: block;
 }
 
-.login-button-wrap {
-    position: relative;
-}
-
-.login-button-wrap svg {
-    position: absolute;
-    top: 6px;
-    left: 16px;
-
-    width: 21px;
-    height: 19px;
-
-    fill: #ffffff;
-}
-
 .login-button,
 .header-cart-button {
+    position: relative;
+
     display: block;
     padding: 8px 0 8px 44px;
 
@@ -486,8 +484,18 @@ input[type="radio"].visually-hidden {
     border-radius: 15px;
 }
 
+.login-button svg {
+    position: absolute;
+    top: 6px;
+    left: 16px;
+
+    width: 21px;
+    height: 19px;
+
+    fill: #ffffff;
+}
+
 .login-button:hover,
-.login-button-wrap:hover .login-button,
 .login:hover .login-button,
 .header-cart-button:hover,
 .header-cart:hover .header-cart-button {
@@ -496,11 +504,24 @@ input[type="radio"].visually-hidden {
     background-color: rgba(248, 247, 244, 1);
 }
 
-.login-button-wrap:hover svg,
+.login-button-button:hover svg,
 .login:hover svg {
     fill: #000000;
 
     cursor: pointer;
+}
+
+.login-button:focus,
+.header-cart-button:focus {
+    color: #323232;
+
+    background-color: rgba(248, 247, 244, 1);
+
+    outline: none;
+}
+
+.login-button:focus svg {
+    fill: #000000;
 }
 
 .login-form {
@@ -583,10 +604,6 @@ input[type="radio"].visually-hidden {
     display: block;
 }
 
-.header-cart-button {
-    position: relative;
-}
-
 .header-cart-button::before {
     content: "";
 
@@ -601,7 +618,8 @@ input[type="radio"].visually-hidden {
 }
 
 .header-cart-button:hover::before,
-.header-cart:hover .header-cart-button::before {
+.header-cart:hover .header-cart-button::before,
+.header-cart-button:focus::before {
     background: url("../img/cart-icon-active.svg") center no-repeat;
 }
 
@@ -959,7 +977,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 79px;
+    padding-bottom: 79px;
 }
 
 .ice-cream,
@@ -1481,6 +1499,10 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
+.social-item:focus svg {
+    fill: rgba(255, 255, 255, 1);
+}
+
 .footer-navigation {
     width: 560px;
     padding-top: 14px;
@@ -1743,7 +1765,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    top: 9;
+    top: 9px;
     left: 0;
 
     width: 18px;
@@ -1765,6 +1787,7 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+    display: block;
     margin-top: 22px;
 }
 
@@ -2041,6 +2064,14 @@ input[type="radio"].visually-hidden {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
+.input-radio:focus+label::before {
+    border: 3px solid rgba(255, 255, 255, 1);
+}
+
+.input-radio:checked:focus+label::after {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 .filter-filler {
     margin-top: 16px;
 }
@@ -2133,6 +2164,14 @@ input[type="radio"].visually-hidden {
     opacity: 0.4;
 }
 
+.input-checkbox:focus+label::before {
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.input-checkbox:checked:focus+label::after {
+    opacity: 1;
+}
+
 .filter-form-button {
     display: block;
     width: 144px;
@@ -2149,10 +2188,6 @@ input[type="radio"].visually-hidden {
     border-radius: 20px;
 
     cursor: pointer;
-}
-
-.filter-form-button:focus {
-    outline: none;
 }
 
 .filter-form-button:hover {
@@ -2178,19 +2213,17 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination {
-    width: 190px;
-    margin-bottom: 30px;
-    margin-left: auto;
-}
-
-.pagination-list {
     position: relative;
 
+    display: block;
+    width: 167px;
+    margin-bottom: 30px;
+    margin-left: auto;
     padding-left: 23px;
 }
 
-.pagination-list::before,
-.pagination-list::after {
+.pagination::before,
+.pagination::after {
     content: "";
 
     position: absolute;
@@ -2202,7 +2235,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.pagination-list::before {
+.pagination::before {
     left: 0;
 
     border: 2px solid rgba(255, 255, 255, 0.2);
@@ -2216,7 +2249,7 @@ input[type="radio"].visually-hidden {
     transform: rotate(-45deg);
 }
 
-.pagination-list::after {
+.pagination::after {
     right: 0;
 
     border: 2px solid rgba(255, 255, 255, 1);
@@ -2261,6 +2294,12 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item a:active {
+    color: #323232;
+
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.pagination-item a:focus {
     color: #323232;
 
     background-color: rgba(255, 255, 255, 1);
