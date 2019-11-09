@@ -2319,8 +2319,8 @@ input[type="radio"].visually-hidden {
     }
 
     100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -2339,8 +2339,8 @@ input[type="radio"].visually-hidden {
     }
 
     100% {
-        -webkit-transform: translateY(0px);
-        transform: translateY(0px);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
